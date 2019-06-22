@@ -14,5 +14,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-server-livereload": "^1.9.2",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "send": "^0.17.1"
   }
 }
