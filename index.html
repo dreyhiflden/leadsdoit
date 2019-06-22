@@ -5,69 +5,92 @@
   <title>Brides catalog</title>
   <link rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.5.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="root">
 
-  <main>
-    <section>
-      <h3>
+  <main class="main">
+    <section class="brides-rating">
+      <h3 class="headline">
         Bride profile
       </h3>
 
-      <div>
-        Religion (the most common)
-        <span>Christian</span>
+      <div class="religion-info">
+        <div class="religion-info__title">Religion
+          <span class="religion-info__title--clarification">(the most common)</span>
+        </div>
+        <div class="religion-info__value">Christian</div>
       </div>
 
-      <ul>
-        <li>
-          Girls Beauty
-          <span>9.1</span>
+      <ul class="rating-list">
+        <li class="rating-list__item">
+          <div class="rating">
+            <label class="rating__name" for="beauty">Girls Beauty</label>
+            <span class="rating__value">9.1</span>
+          </div>
+          <progress class="rating-bar" id="beauty" max="100" value="91"> 91% </progress>
         </li>
-        <li>
-          Family oriented
-          <span>7.6</span>
+        <li class="rating-list__item">
+          <div class="rating">
+            <label class="rating__name" for="familty_oriented">Family oriented</label>
+            <span class="rating__value">7.6</span>
+          </div>
+          <progress class="rating-bar" id="familty_oriented" max="100" value="76"> 76% </progress>
         </li>
-        <li>
-          Dating older guy
-          <span>5.1</span>
+        <li class="rating-list__item">
+          <div class="rating">
+            <label class="rating__name" for="older">Dating older guy</label>
+            <span class="rating__value">5.1</span>
+          </div>
+          <progress class="rating-bar" id="older" max="100" value="51"> 51% </progress>
         </li>
-        <li>
-          Ease of seduction
-          <span>2.4</span>
+        <li class="rating-list__item">
+          <div class="rating">
+            <label class="rating__name" for="easse_seduction">Ease of seduction</label>
+            <span class="rating__value">2.4</span>
+          </div>
+          <progress class="rating-bar" id="easse_seduction" max="100" value="24"> 24% </progress>
         </li>
-        <li>
-          English speaking
-          <span>5.4</span>
+        <li class="rating-list__item">
+          <div class="rating">
+            <label class="rating__name" for="english">English speaking</label>
+            <span class="rating__value">5.4</span>
+          </div>
+          <progress class="rating-bar" id="english" max="100" value="54"> 54% </progress>
         </li>
       </ul>
 
-      <div>
-        Overall rating (10-max)
-        <span>8.7</span>
+      <div class="overall-rating">
+        <div class="overall-rating__name">Overall <span class="overall-rating__name--clarification">rating (10-max)</span></div>
+        <div class="overall-rating__value">8.7</div>
       </div>
+
     </section>
 
-    <section>
-      <h3>Brides comparisons</h3>
+    <section class="comparisons">
+      <h3 class="headline">Brides comparisons</h3>
 
-      <table>
+      <table class="comparisons-table">
         <thead>
-        <tr>
-          <th>Ethnic group</th>
-          <th>Overall rating (1-10)</th>
-          <th>Girls Beauty (1-10)</th>
-          <th>Family oriented (1-10)</th>
-          <th>Dating older guy (1-10)</th>
-          <th>Ease of seduction (1-10)</th>
-          <th>English speaking (1-10)</th>
-        </tr>
+          <tr>
+            <th>Ethnic group</th>
+            <th>Overall rating (1-10)</th>
+            <th>Girls Beauty (1-10)</th>
+            <th>Family oriented (1-10)</th>
+            <th>Dating older guy (1-10)</th>
+            <th>Ease of seduction (1-10)</th>
+            <th>English speaking (1-10)</th>
+          </tr>
         </thead>
 
         <tbody>
         <tr>
-          <td>Ukrainian</td>
-          <td>10</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">Ukrainian</a>
+          </td>
+          <td><span class="summary-rating">10.0</span></td>
           <td>9.1</td>
           <td>8.1</td>
           <td>7.1</td>
@@ -75,8 +98,11 @@
           <td>2.1</td>
         </tr>
         <tr>
-          <td>Brazilian</td>
-          <td>8</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">Brazilian</a>
+          </td>
+          <td><span class="summary-rating">8.3</span></td>
           <td>2.1</td>
           <td>3.1</td>
           <td>1.1</td>
@@ -84,8 +110,11 @@
           <td>4.1</td>
         </tr>
         <tr>
-          <td>Thai</td>
-          <td>8</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">Thai</a>
+          </td>
+          <td><span class="summary-rating">8.3</span></td>
           <td>2.1</td>
           <td>3.1</td>
           <td>1.1</td>
@@ -93,8 +122,11 @@
           <td>4.1</td>
         </tr>
         <tr>
-          <td>American</td>
-          <td>8</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">American</a>
+          </td>
+          <td><span class="summary-rating">8.3</span></td>
           <td>2.1</td>
           <td>3.1</td>
           <td>1.1</td>
@@ -102,8 +134,11 @@
           <td>4.1</td>
         </tr>
         <tr>
-          <td>Venezuelan</td>
-          <td>8</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">Venezuelan</a>
+          </td>
+          <td><span class="summary-rating">8.3</span></td>
           <td>2.1</td>
           <td>3.1</td>
           <td>1.1</td>
@@ -111,8 +146,11 @@
           <td>4.1</td>
         </tr>
         <tr>
-          <td>Australian</td>
-          <td>8</td>
+          <td class="comparisons-table__country">
+            <img class="girl-image" src="img/girl.png" alt="Girl picture">
+            <a href="#" class="comparisons-table__link">Australian</a>
+          </td>
+          <td><span class="summary-rating">8.3</span></td>
           <td>2.1</td>
           <td>3.1</td>
           <td>1.1</td>

@@ -1,0 +1,208 @@
+$secondary-color: #7e8996;
+$primary-color: #3e454e;
+
+.root {
+  background: #e5e5e5;
+}
+
+.main {
+  width: 900px;
+  max-width: 80%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  max-width: 960px;
+}
+
+.rating-bar {
+  height: 8px;
+  border-radius: 30px;
+  width: 100%;
+
+  &[value]::-webkit-progress-bar {
+    background-color: #eff5f9;
+    border-radius: 5px;
+  }
+
+  &[value]::-webkit-progress-value {
+    border-radius: 40px;
+    background-color: #84d6ef;
+  }
+}
+
+.rating-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  &__item {
+    margin: 0 0 10px 0;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__name {
+    color: $secondary-color;
+    font-size: 16px;
+  }
+
+  &__value {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+.headline {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3e454e;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.religion-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 25px 0;
+  color: $secondary-color;
+
+  &__title {
+    &--clarification {
+      color: #b5bbc2;
+      display: block;
+    }
+  }
+
+  &__value {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
+
+.overall-rating {
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    color: $secondary-color;
+
+    &--clarification {
+      display: block;
+      color: #b5bbc2;
+    }
+  }
+
+  &__value {
+    color: #fdc54f;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    padding: 0 30px 0 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 8px;
+      height: 23px;
+      width: 23px;
+      background: url("../img/star.png");
+    }
+  }
+
+}
+
+.brides-rating {
+  margin: 0 0 80px 0;
+}
+
+.comparisons {
+  overflow-x: auto;
+}
+
+.comparisons-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: $primary-color;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+
+  & th {
+    text-align: left;
+    color: $secondary-color;
+    font-weight: normal;
+    height: 100px;
+    word-spacing: 100vw;
+    vertical-align: top;
+    min-width: 80px;
+    padding: 5px;
+  }
+
+  & tr {
+    height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f3f8fa;
+
+    &:hover {
+      background: #eff5f9;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  & td {
+    margin: 0;
+    padding: 5px;
+    height: 40px;
+  }
+
+  &__country {
+    width: 200px;
+    min-width: 170px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: none;
+      color: $secondary-color;
+    }
+  }
+}
+
+.girl-image {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 0 0;
+}
+
+.summary-rating {
+  color: #fdc54f;
+  padding: 0 0 0 23px;
+  position: relative;
+
+  &::before {
+    content: '';
+    left: 0;
+    top: 2px;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background: url("../img/star-small.png");
+  }
+}
